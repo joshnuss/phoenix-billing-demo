@@ -6,13 +6,20 @@ defmodule Store do
   def start(_type, _args) do
     import Supervisor.Spec, warn: false
 
+    config = Application.get_env(:store, :gateway)
+    type   = Dict.get(config, :type)
+    settings = %{credentials:      Dict.get(config, :credentials),
+                 default_currency: Dict.get(config, :default_currency)}
+
     children = [
       # Start the endpoint when the application starts
       supervisor(Store.Endpoint, []),
       # Start the Ecto repository
       worker(Store.Repo, []),
+
       # Here you could define other workers and supervisors as children
       # worker(Store.Worker, [arg1, arg2, arg3]),
+      worker(Commerce.Billing.Worker, [type, settings], name: :default_gateway)
     ]
 
     # See http://elixir-lang.org/docs/stable/elixir/Supervisor.html
