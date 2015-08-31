@@ -29,7 +29,7 @@
         <div class="col-md-6 form-group">
           <label for="region">State</label>
           <select class="form-control" name="region">
-            <option>-- choose --</option>
+            <option value="">-- choose --</option>
             <option value="AL">Alabama</option>
             <option value="AK">Alaska</option>
             <option value="AZ">Arizona</option>
