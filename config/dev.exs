@@ -39,3 +39,8 @@ config :store, Store.Repo,
   password: "postgres",
   database: "store_dev",
   pool_size: 10
+
+config :store, :gateway,
+  type: Commerce.Billing.Gateways.Bogus,
+  credentials: {"sk_test_BQokikJOvBiI2HlWgH4olfQ2", ""},
+  default_currency: "USD"
