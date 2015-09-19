@@ -2,4 +2,6 @@
   <h1>Thank You!</h1>
 
   <p>Your card was processed successfully.</p>
+
+  <p>Authorization code: <strong><%= @response.authorization %></strong></p>
 </div>
