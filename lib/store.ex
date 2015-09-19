@@ -19,7 +19,7 @@ defmodule Store do
 
       # Here you could define other workers and supervisors as children
       # worker(Store.Worker, [arg1, arg2, arg3]),
-      worker(Commerce.Billing.Worker, [type, settings], name: :default_gateway)
+      worker(Commerce.Billing.Worker, [type, settings, [name: :default_gateway]])
     ]
 
     # See http://elixir-lang.org/docs/stable/elixir/Supervisor.html
