@@ -13,6 +13,18 @@ The app is configured with Stripe in test mode.
 
 Use card number **4111111111111111** or any test Stripe card
 
+
+## Screenshots
+
+### Checkout Page
+
+![Checkout Page](images/checkout-page.png)
+
+### Thank you Page
+
+![Thank You Page](images/thank-you-page.png)
+
+
 ## Learn more
 
 ### Commerce.Billing
