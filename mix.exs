@@ -18,7 +18,7 @@ defmodule Store.Mixfile do
   def application do
     [mod: {Store, []},
      applications: [:phoenix, :phoenix_html, :cowboy, :logger,
-                    :phoenix_ecto, :postgrex]]
+                    :phoenix_ecto, :postgrex, :commerce_billing]]
   end
 
   # Specifies which paths to compile per environment
