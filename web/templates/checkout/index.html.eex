@@ -14,14 +14,14 @@
 
       <div class="form-group">
         <label for="street1">Street</label>
-        <input class="form-control" name="street1"/>
+        <input class="form-control" name="street1" value="<%= @address.street1 %>"/>
         <br/>
-        <input class="form-control" name="street2"/>
+        <input class="form-control" name="street2" value="<%= @address.street2 %>"/>
       </div>
 
       <div class="form-group">
         <label for="city">City</label>
-        <input class="form-control" name="city"/>
+        <input class="form-control" name="city" value="<%= @address.city %>"/>
       </div>
 
       <div class="row">
@@ -94,17 +94,17 @@
 
       <div class="row">
         <div class="form-group col-md-6">
-          <label for="zip">Zip Code</label>
-          <input class="form-control" name="zip"/>
+          <label for="postal_code">Zip Code</label>
+          <input class="form-control" name="postal_code" value="<%= @address.postal_code %>"/>
         </div>
       </div>
 
     </div>
 
-    <div class="col-md-6">
+    <div class="credit-card col-md-6">
       <div class="form-group">
-        <label for="number">Card Number</label>
-        <input class="form-control" name="number"/>
+        <label for="card">Card Number</label>
+        <input class="form-control" name="card"/>
       </div>
 
       <div class="row">
