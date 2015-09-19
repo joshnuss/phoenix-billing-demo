@@ -35,6 +35,6 @@ defmodule Store.Mixfile do
      {:phoenix_html, "~> 2.1"},
      {:phoenix_live_reload, "~> 1.0", only: :dev},
      {:cowboy, "~> 1.0"},
-     {:commerce_billing, github: "joshnuss/commerce_billing"}]
+     {:commerce_billing, "~> 0.0.2"}]
   end
 end
