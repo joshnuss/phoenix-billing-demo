@@ -41,6 +41,6 @@ config :store, Store.Repo,
   pool_size: 10
 
 config :store, :gateway,
-  type: Commerce.Billing.Gateways.Bogus,
+  type: Commerce.Billing.Gateways.Stripe,
   credentials: {"sk_test_BQokikJOvBiI2HlWgH4olfQ2", ""},
   default_currency: "USD"
