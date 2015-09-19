@@ -11,13 +11,13 @@ To start your Phoenix app:
 
 The app is configured with Stripe in test mode.
 
-Use card number *4111111111111111* or any test Stripe card
+Use card number **4111111111111111** or any test Stripe card
 
 ## Learn more
 
 ### Commerce.Billing
 
-https://github.com/joshnuss/commerce_billing
+  * https://github.com/joshnuss/commerce_billing
 
 ### Phoenix
 
