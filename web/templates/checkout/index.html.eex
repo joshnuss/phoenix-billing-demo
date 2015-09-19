@@ -118,7 +118,7 @@
         <div class="col-md-6 form-group">
           <label for="month">Expiration</label>
           <select class="form-control" name="month">
-            <option>Month</option>
+            <option value="">-- month --</option>
             <option value="1">01 - Jan</option>
             <option value="2">02 - Feb</option>
             <option value="3">03 - Mar</option>
@@ -137,7 +137,7 @@
         <div class="col-md-6 form-group">
           <label for="year">&nbsp;</label>
           <select class="form-control" name="year">
-            <option>Year</option>
+            <option value="">-- year --</option>
             <option value="2015">2015</option>
             <option value="2016">2016</option>
             <option value="2017">2017</option>
