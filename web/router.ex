@@ -18,7 +18,7 @@ defmodule Store.Router do
 
     get "/", PageController, :index
 
-    resources "/checkout", CheckoutController, singelton: true
+    resources "/checkout", CheckoutController, singleton: true
   end
 
   # Other scopes may use custom stacks.
