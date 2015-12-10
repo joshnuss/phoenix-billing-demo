@@ -4,7 +4,7 @@ alias Commerce.Billing.Response
 defmodule Store.CheckoutController do
   use Store.Web, :controller
 
-  def index(conn, _params) do
+  def show(conn, _params) do
     render conn, "index.html",
       card: %Billing.CreditCard{},
       address: %Billing.Address{},

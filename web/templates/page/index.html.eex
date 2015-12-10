@@ -4,6 +4,6 @@
 
 
   <%= link "Go to Checkout Page",
-        to: checkout_path(@conn, :index),
+        to: checkout_path(@conn, :show),
         class: "btn btn-lg btn-primary" %>
 </div>
