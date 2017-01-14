@@ -14,8 +14,6 @@ defmodule Store do
     children = [
       # Start the endpoint when the application starts
       supervisor(Store.Endpoint, []),
-      # Start the Ecto repository
-      worker(Store.Repo, []),
 
       # Here you could define other workers and supervisors as children
       # worker(Store.Worker, [arg1, arg2, arg3]),
